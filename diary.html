@@ -12,7 +12,7 @@
 
   <article class="log">
     <h2>[ LOG #001 ]</h2>
-    <p class="date">2026.02.07</p>
+    <p class="date" id="today"></p>
     <p>
       Camera off.<br>
       Background noise only.
@@ -20,6 +20,15 @@
   </article>
 
 </main>
+<script>
+  const today = new Date();
 
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, '0');
+  const date = String(today.getDate()).padStart(2, '0');
+
+  document.getElementById("today").textContent =
+    `${year}.${month}.${date}`;
+</script>
 </body>
 </html>
