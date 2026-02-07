@@ -20,9 +20,13 @@ body {
   color: #8a8a8a;
 }
 
-h1 {
-  letter-spacing: 4px;
-  font-weight: 500;
+h1::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: #bbe309;
+  margin: 12px auto 0;
 }
 
 .enter {
