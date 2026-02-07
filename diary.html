@@ -11,7 +11,7 @@
   <h1>DAILY LOG</h1>
 
   <article class="log">
-    <h2>[ LOG #001 ]</h2>
+    <h2 class="log-title"></h2>
     <p class="date" id="today"></p>
     <p>
       Camera off.<br>
@@ -29,6 +29,14 @@
 
   document.getElementById("today").textContent =
     `${year}.${month}.${date}`;
+  <script>
+  const logs = document.querySelectorAll(".log-title");
+
+  logs.forEach((log, index) => {
+    const number = String(logs.length - index).padStart(3, "0");
+    log.textContent = `[ LOG #${number} ]`;
+  });
+</script>
 </script>
 </body>
 </html>
