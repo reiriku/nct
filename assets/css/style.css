@@ -39,3 +39,29 @@ h1::after {
   color: #bbe309;
 }
 
+.diary {
+  align-items: flex-start;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.log {
+  margin-bottom: 120px;
+}
+
+.log h2 {
+  color: #bbe309;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.date {
+  font-size: 12px;
+  color: #8a8a8a;
+  margin-bottom: 20px;
+}
+
+.log p {
+  line-height: 1.8;
+}
